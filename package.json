@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "cypress": "^13.10.0"
+    "cypress": "^13.10.0",
+    "cypress-mochawesome-reporter": "^3.8.2"
   },
   "name": "qarepositorios",
   "description": "��#\u0000 \u0000f\u0000a\u0000k\u0000e\u0000r\u0000S\u0000t\u0000o\u0000r\u0000e\u0000A\u0000p\u0000i\u0000\r\u0000 \u0000",
@@ -172,7 +173,8 @@
   },
   "scripts": {
     "test": "test",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "html-report": "cypress run --spec cypress/e2e/fakeStore.cy.js --browser chrome edge --headed"
   },
   "keywords": [
     "e2e",
