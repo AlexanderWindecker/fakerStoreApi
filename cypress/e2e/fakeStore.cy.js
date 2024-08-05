@@ -1,10 +1,10 @@
-import { faker } from '@faker-js/faker';
+import { faker } from "@faker-js/faker";
 
 describe("Fake Store API", () => {
   const url = "https://fakestoreapi.com/products";
   it("Get all products", () => {
     cy.api("GET", `${url}`).its("status").should("equal", 200);
-    });
+  });
 
   it("Get a random product", () => {
     cy.api("GET", `${url}`).then((response) => {
